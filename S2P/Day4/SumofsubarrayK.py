@@ -1,0 +1,31 @@
+# using 2 nested loop         tc =O(n2)
+#def sol(arr,k):
+#     res=0
+#     for i in range(len(arr)):
+#       sum =0 
+#         for j in range(i,len(arr)):
+#             sum =sum+arr[j]
+#             if sum == k:
+#                 subarrlen=j-i+1
+#                 res=max(res,subarrlen)
+#     return res 
+# arr=[-5,8,-14,2,4,12]
+# print(sol(arr),-5)
+
+
+# using  nested loop  O(n3)
+def sol(arr, k):
+    res = 0
+    for i in range(len(arr)):
+        for j in range(i, len(arr)):
+            sum = 0
+            for l in range(i,j+1):
+                sum += arr[l]
+            if sum == k:
+                subarrlen = j - i + 1
+                res = max(res, subarrlen)
+    return res
+
+arr = [-5, 8, -14, 2, 4, 12]
+k = -5
+print(sol(arr, k))
