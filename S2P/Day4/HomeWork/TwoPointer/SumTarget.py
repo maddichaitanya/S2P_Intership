@@ -11,6 +11,5 @@ def sol(arr, target):
             right -= 1
     return None
 
-
 arr=[1,2,3,2,1]
 print(sol(arr,2))

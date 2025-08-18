@@ -1,7 +1,7 @@
 def longest_mountain(arr):
     n = len(arr)
     longest = 0
-    for i in range(1, n - 1):
+    for i in range(1, len(arr) - 1):
         if arr[i] > arr[i - 1] and arr[i] > arr[i + 1]:  
             left = i
             right = i
@@ -11,11 +11,10 @@ def longest_mountain(arr):
                 right += 1
             length = right - left + 1
             longest = max(longest, length)
-    
     return longest 
 
-arr = [2, 1, 4, 7, 3, 2] 
-print(longest_mountain(arr))  # Output: 5
+arr = [2, 1, 4, 7, 3, 2]   
+print(longest_mountain(arr))  # Output: 5  
 
 
 

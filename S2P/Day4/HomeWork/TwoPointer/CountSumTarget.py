@@ -13,5 +13,4 @@ def sol(arr, target):
         else:
             right -= 1
     return count
-
-print(sol([1, 2, 3, 4, 3], 6))
+print(sol([1, 2, 3, 4, 5], 6))

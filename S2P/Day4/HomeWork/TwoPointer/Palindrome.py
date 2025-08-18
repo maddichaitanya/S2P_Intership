@@ -5,6 +5,5 @@ def is_palindrome(arr):
             return False
         left += 1
         right -= 1
-    return True
-
+    return True 
 print(is_palindrome([1, 2, 3, 2, 1]))
