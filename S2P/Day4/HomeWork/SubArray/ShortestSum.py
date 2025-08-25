@@ -9,10 +9,7 @@ def shortest_subarray_bruteforce(arr, k):
             if curr_sum >= k:
                 min_len = min(min_len, j - i + 1)
                 break  # No need to extend, we want shortest
-    
     return min_len if min_len != float('inf') else -1
-
-# Example
 arr = [3, 6, 7, 4, 3]
 k = 12
 print(shortest_subarray_bruteforce(arr, k))  # Output: 2  [6,7]

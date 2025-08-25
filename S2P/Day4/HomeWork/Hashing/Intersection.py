@@ -6,7 +6,7 @@ def sol(union_result):
     return union_result    
 
 arr1=[1,2,3,4,5]
-arr2=[6,7,4,5,3]
-result= arr1 and arr2
+arr2=[6,7,4,5,3]  
+result= arr1 and arr2     #[3,4,5] 
 print("Union",sol(result) )
 

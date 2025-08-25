@@ -5,5 +5,5 @@ def solu(arr):
             largest=arr[i]
     return largest
 
-arr=[1,2,3,4,5,100]
+arr=[1,2,3,4,5,10]
 print(solu(arr))

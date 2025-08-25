@@ -10,5 +10,5 @@ def consecutiveOnes(arr):
             maxcount = count
     return maxcount
 
-arr = [1, 0, 0, 1, 1, 1,1, 0]  arr=[2,0,0,0]
+arr = [1, 0, 0, 1, 1, 1,1, 0]  #arr=[2,0,0,0]
 print(consecutiveOnes(arr))

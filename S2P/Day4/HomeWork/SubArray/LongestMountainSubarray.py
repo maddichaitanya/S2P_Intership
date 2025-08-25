@@ -1,9 +1,9 @@
 def longest_mountain(arr):
     n = len(arr)
-    longest = 0
-    for i in range(1, len(arr) - 1):
-        if arr[i] > arr[i - 1] and arr[i] > arr[i + 1]:  
-            left = i
+    longest = 0 
+    for i in range(1, len(arr) - 1):  
+        if arr[i] > arr[i - 1] and arr[i] > arr[i + 1]: 
+            left = i 
             right = i
             while left > 0 and arr[left] > arr[left - 1]:
                 left -= 1
