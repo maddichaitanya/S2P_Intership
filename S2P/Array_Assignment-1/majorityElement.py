@@ -10,14 +10,14 @@ def majorityElement(nums):
         if num not in freq:  
             freq[num] = 1
         else:
-            freq[num] = freq[num] + 1           #num=7 freq = {7:5,0:2,1:1,2:1}  num=6 feq={1:4,2:2}
+            freq[num] = freq[num] + 1           #num=9 freq = {7:5,0:2,1:1,2:1}  num=6 feq={1:4,2:2}
     for key,value in freq.items():             #items = iterate both key & value
         if value > len(nums) // 2:
             return key,value
 
 
-print(majorityElement([7, 0, 0, 1, 7, 7, 2, 7, 7]))  # Output: 7
-print(majorityElement([1, 1, 1, 2, 1, 2]))           # Output: 1     
+print(majorityElement([7, 0, 0, 1, 7, 7, 2, 7, 7]))  # Output: (7,5)
+print(majorityElement([1, 1, 1, 2, 1, 2]))           # Output: (1,4) 
 # print(majorityElement([1,1,2,3,4,5,5]))
 # print(majorityElement([1,1,5,5]))
 

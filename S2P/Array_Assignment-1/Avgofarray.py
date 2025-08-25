@@ -5,5 +5,5 @@ def Avg(arr):
     
     return sum //len(arr)
 
-print(Avg([1, 2, 3, 4, 5]))
-print(Avg([5, 8, 11]))
+print(Avg([1, 2, 3, 4, 5]))  # 3
+print(Avg([5, 8, 11]))  # 8
