@@ -1,3 +1,9 @@
+'''Works by repeatedly swapping adjacent elements if they are in the wrong order.
+
+Big elements “bubble up” to the end.
+
+Keep repeating until no swaps are needed.'''
+
 def bubblesort(num):
     for i in range(len(num)-1,0,-1):  #  pass=4  {4,3,2,1} 
         for j in range(i):  

@@ -7,5 +7,5 @@ def sol(arr):
         print()       
 
 arr=[10,20,30,40]
-print(sol(arr))    
+sol(arr)
 

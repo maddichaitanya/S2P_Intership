@@ -3,7 +3,7 @@ def longest_common_prefix(strs):
         return ""
     prefix = strs[0]  # Assume first word is the prefix initially
     for word in strs[1:]:  # Compare with each next word
-        while not word.startswith(prefix):
+        while not word.startswith(prefix): 
             prefix = prefix[:-1]  # Remove last character until it matches
             if not prefix:  # If prefix becomes empty
                 return ""

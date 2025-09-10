@@ -1,6 +1,12 @@
+'''Works by selecting the smallest element and putting it at the beginning.
+
+Find minimum from unsorted part.
+
+Swap with the first unsorted element.'''
+
 def Selection(num):
     for i in range(0,len(num)-1):
-        min=i
+        min=i 
         for j in range(i+1,len(num)):
              if num[j]<num[min]:
                 min=j

@@ -9,3 +9,10 @@ def insertion(num):
 num =[4,3,2,5,6,9]
 print(insertion(num))
 
+'''Works like how we arrange playing cards in our hand.
+
+Start from the 2nd element.
+
+Compare it with the left side and insert it in the correct position.
+
+Repeat until the array is sorted.'''
